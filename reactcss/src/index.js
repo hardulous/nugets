@@ -1,3 +1,4 @@
+import Calendar from './DatePicker/Calender.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import GalleryPage from './GalleryPage';
@@ -36,10 +37,13 @@ root.render(
      {/* <ReactPhotoAlbum/> */}
 
      {/* Combination of photo album and gallery */}
-     <GalleryPage/>
+     {/* <GalleryPage/> */}
 
      {/* RazorPay Integration */}
      {/* <RazorPay/> */}
+
+     {/* Datepicker */}
+     <Calendar/>
 
 
   </React.StrictMode>
