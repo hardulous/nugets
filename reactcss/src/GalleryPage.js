@@ -8,6 +8,15 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "./Styles/Gallery.css"
+import img1 from "./images/1.webp"
+import img2 from "./images/2.webp"
+import img3 from "./images/3.webp"
+import img4 from "./images/4.webp"
+import img5 from "./images/5.webp"
+import img6 from "./images/6.webp"
+import img7 from "./images/7.webp"
+import img8 from "./images/8.webp"
+import img9 from "./images/9.webp"
 
 import { useState } from 'react';
 
@@ -17,71 +26,89 @@ const GalleryPage = () => {
 
   const imageSlide = [
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F1.jpg?alt=media&token=936571ef-e46f-4ca1-9b21-fc99f9c78a08",
+      src: img1,
       title: "Entrance", description: "Check in and Check out steps to our club" 
     },
     
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F2.jpg?alt=media&token=bdc041b1-373b-45b1-91ae-e2f500c3b846",
+      src: img2,
       title: "Inside View", description: "View of king's restaurant and bar" 
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F3.jpg?alt=media&token=c8feb948-594e-4d10-95c1-1f7ffdc19051",
+      src: img3,
       title: "Drinks and beverages", description: "Bar and drink place of our club" 
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F4.jpg?alt=media&token=76b0bcd2-92c1-4533-a7ad-038b6aa47b73",
+        src: img4,
         title: "DJ", description: "Dancing area" 
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F6.jpg?alt=media&token=d8b09921-3ada-4a70-9a6f-e9d2789d2fd9",
+        src: img5,
         title: "DJ", description: "Dancing area 2" 
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F7.jpg?alt=media&token=f96b6863-3ca0-4336-b224-c6be9ec7cd61",
+        src: img6,
         title: "Sitting area", description: "A seprate area for our customer to sit and have banter talks" 
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F8.jpg?alt=media&token=d71d20ea-c9e0-4bfb-882d-90a5f753a0ff",
+        src: img7,
+        title: "Sitting area", description: "A seprate area for our customer to sit and have banter talks 2" 
+    },
+    {
+      src: img8,
+      title: "Sitting area", description: "A seprate area for our customer to sit and have banter talks 2" 
+    },
+   {
+        src: img9,
         title: "Sitting area", description: "A seprate area for our customer to sit and have banter talks 2" 
     },
   ]
 
   const photos = [
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F1.jpg?alt=media&token=936571ef-e46f-4ca1-9b21-fc99f9c78a08',
+        src: img1,
         width: 400,
         height: 300
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F2.jpg?alt=media&token=bdc041b1-373b-45b1-91ae-e2f500c3b846',
+        src: img2,
         width: 100,
         height: 100
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F3.jpg?alt=media&token=c8feb948-594e-4d10-95c1-1f7ffdc19051',
+        src: img3,
         width: 400,
         height: 300
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F4.jpg?alt=media&token=76b0bcd2-92c1-4533-a7ad-038b6aa47b73',
+        src: img4,
         width: 800,
         height: 600
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F6.jpg?alt=media&token=d8b09921-3ada-4a70-9a6f-e9d2789d2fd9',
+        src: img5,
         width: 100,
         height: 100
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F7.jpg?alt=media&token=f96b6863-3ca0-4336-b224-c6be9ec7cd61',
+        src: img6,
         width: 400,
         height: 300
     },
     {
-        src: 'https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2F8.jpg?alt=media&token=d71d20ea-c9e0-4bfb-882d-90a5f753a0ff',
+        src: img7,
         width: 600,
         height: 400
+    },
+     {
+        src: img8,
+        width: 400,
+        height: 300
+    },
+     {
+        src: img9,
+        width: 400,
+        height: 300
     }
   ]
   
@@ -90,7 +117,7 @@ const GalleryPage = () => {
     <>
     
     <PhotoAlbum
-        layout="rows"
+        layout="columns"
         photos={photos}
         columns={(containerWidth) => {
             if (containerWidth < 400) return 2;

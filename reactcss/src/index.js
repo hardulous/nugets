@@ -36,10 +36,10 @@ root.render(
      {/* <ReactPhotoAlbum/> */}
 
      {/* Combination of photo album and gallery */}
-     {/* <GalleryPage/> */}
+     <GalleryPage/>
 
      {/* RazorPay Integration */}
-     <RazorPay/>
+     {/* <RazorPay/> */}
 
 
   </React.StrictMode>

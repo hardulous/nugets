@@ -8,6 +8,14 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import img1 from "../images/1.jpg"
+import img2 from "../images/2.jpg"
+import img3 from "../images/3.jpg"
+import img4 from "../images/4.jpg"
+import img5 from "../images/5.jpg"
+import img6 from "../images/6.jpg"
+import img7 from "../images/7.jpg"
+import img8 from "../images/8.jpg"
 
 
 const Gallery = () => {
@@ -38,16 +46,16 @@ const Gallery = () => {
         close={() => setopen(false)}
         slides={[
           {
-            src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2Fclub-logo-fin.png?alt=media&token=c4b0c474-2a8f-457c-b48f-8efa7f8bc91a",
+            src: img1,
             title: "Slide title", description: "Slide description" 
           },
           
           {
-            src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2Ficon-dj.png?alt=media&token=427840a1-63c1-4282-87fd-78f8638471c4",
+            src: img2,
             title: "Slide title", description: "Slide description" 
           },
           {
-            src: "https://firebasestorage.googleapis.com/v0/b/fir-learning-ab0c8.appspot.com/o/images%2Fclub-imageTwo.png?alt=media&token=40d90387-7b21-42c2-a222-cba66b9fdfc8",
+            src: img3,
             title: "Slide title", description: "Slide description" 
           },
         ]}
